@@ -9,6 +9,8 @@ import { HeaderComponent } from './header/header.component';
 //services that we are importing
 import {EntryService} from './entry.service';
 import { AppRouterModule } from './app-router.module';
+import { HttpClientModule } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { AppRouterModule } from './app-router.module';
   ],
   imports: [
     BrowserModule,
-    AppRouterModule
+    HttpClientModule,
+    AppRouterModule,
+    BrowserAnimationsModule
   ],
   providers: [EntryService], 
   bootstrap: [AppComponent]

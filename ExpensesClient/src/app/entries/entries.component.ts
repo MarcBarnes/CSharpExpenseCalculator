@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { EntryService } from '../entry.service';
 
 @Component({
   selector: 'app-entries',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EntriesComponent implements OnInit {
 
-  constructor() { }
+  constructor(private service:EntryService) { }
 
   ngOnInit() {
+    this.service.getAll().subscribe((data) => {
+      console.log('Result - ', data);
+    })
   }
 
 }

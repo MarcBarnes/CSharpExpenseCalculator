@@ -176,3 +176,6 @@ C:\Users\Mark\source\repos\MarcBarnes\CSharpExpenseCalculator\ExpensesAPI\Expens
 C:\Users\Mark\source\repos\MarcBarnes\CSharpExpenseCalculator\ExpensesAPI\ExpensesAPI\obj\Debug\ExpensesAPI.pdb
 C:\Users\Mark\source\repos\MarcBarnes\CSharpExpenseCalculator\ExpensesAPI\ExpensesAPI\obj\Debug\ExpensesAPI.Migrations.Initial.resources
 C:\Users\Mark\source\repos\MarcBarnes\CSharpExpenseCalculator\ExpensesAPI\ExpensesAPI\obj\Debug\ExpensesAPI.csproj.GenerateResource.cache
+C:\Users\Mark\source\repos\MarcBarnes\CSharpExpenseCalculator\ExpensesAPI\ExpensesAPI\bin\System.Web.Cors.dll
+C:\Users\Mark\source\repos\MarcBarnes\CSharpExpenseCalculator\ExpensesAPI\ExpensesAPI\bin\System.Web.Http.Cors.dll
+C:\Users\Mark\source\repos\MarcBarnes\CSharpExpenseCalculator\ExpensesAPI\ExpensesAPI\bin\System.Web.Http.Cors.xml
