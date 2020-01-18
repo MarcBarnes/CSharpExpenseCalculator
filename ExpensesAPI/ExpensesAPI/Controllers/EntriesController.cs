@@ -1,4 +1,5 @@
 ﻿using ExpensesAPI.Data;
+using ExpensesAPI.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,12 +25,38 @@ namespace ExpensesAPI.Controllers
                     return Ok(entries);
                 }
             }
-            catch (Exception exConn)
+            catch (Exception ex)
             {
-                return BadRequest(exConn.Message);
-                throw;
+                return BadRequest(ex.Message);
+                
+            }
+        }
+
+        [HttpPost]
+        public IHttpActionResult PostEntry([FromBody]Entry entry)
+        {
+            //to check if model is invalid
+            if (!ModelState.IsValid) return BadRequest(ModelState);
+
+            try
+            {
+                using (var context = new AppDbContext())
+                {
+                    //adding entry and saving database changes
+                    context.Entries.Add(entry);
+                    context.SaveChanges();
+
+                    return Ok("Entry added");
+                }
+            }
+            catch (Exception ex)
+            {
+
+                return BadRequest(ex.Message);
             }
 
         }
+
+
     }
 }
