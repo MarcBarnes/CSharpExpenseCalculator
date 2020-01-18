@@ -8,6 +8,7 @@ import { EntryService } from '../entry.service';
 })
 export class EntriesComponent implements OnInit {
 
+  displayedColumns: string[] = ['Description', 'IsExpense', 'Value']
   constructor(private service:EntryService) { }
 
   ngOnInit() {

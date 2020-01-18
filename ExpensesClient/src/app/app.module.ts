@@ -10,11 +10,14 @@ import { HeaderComponent } from './header/header.component';
 import {EntryService} from './entry.service';
 import { AppRouterModule } from './app-router.module';
 import { HttpClientModule } from '@angular/common/http';
-import { MatSliderModule } from '@angular/material/slider';
+
 
 
 //material designs
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatButtonModule} from '@angular/material/button';
+import { MatSliderModule } from '@angular/material/slider';
+import {MatTableModule} from '@angular/material/table';
 
 @NgModule({
   declarations: [
@@ -27,8 +30,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserModule,
     HttpClientModule,
     AppRouterModule,
-    BrowserAnimationsModule,
-    MatSliderModule
+    //ng Material design
+    BrowserAnimationsModule, MatButtonModule, MatTableModule, MatSliderModule
   ],
   providers: [EntryService], 
   bootstrap: [AppComponent]
