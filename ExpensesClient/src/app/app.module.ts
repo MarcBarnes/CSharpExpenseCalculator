@@ -8,6 +8,7 @@ import { HeaderComponent } from './header/header.component';
 
 //services that we are importing
 import {EntryService} from './entry.service';
+import {AuthService} from './auth.service';
 import { AppRouterModule } from './app-router.module';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -48,7 +49,7 @@ import { DeleteEntryComponent } from './delete-entry/delete-entry.component';
     MatSliderModule,MatInputModule, MatCardModule, MatSelectModule, MatToolbarModule,
   ],
   entryComponents:[UpdateEntryComponent],
-  providers: [EntryService], 
+  providers: [EntryService, AuthService], 
   bootstrap: [AppComponent]
 })
 export class AppModule { }
