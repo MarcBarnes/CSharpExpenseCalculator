@@ -14,6 +14,28 @@ namespace ExpensesAPI.Controllers
     public class EntriesController : ApiController
     {
         [HttpGet]
+        public IHttpActionResult GetEntry(int id)
+        {
+
+            try
+            {
+                //opens connection string, closes it when done
+                using (var context = new AppDbContext())
+                {
+                    var entry = context.Entries.FirstOrDefault(n =>n.Id == id);
+                    if (entry == null) return NotFound();
+                
+                    return Ok(entry);
+                }
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+
+            }
+        }
+
+        [HttpGet]
         public IHttpActionResult GetEntries()
         {
 
