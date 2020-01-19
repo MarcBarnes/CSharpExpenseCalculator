@@ -26,6 +26,7 @@ import { NewEntryComponent } from './new-entry/new-entry.component';
 //forms
 import {ReactiveFormsModule} from '@angular/forms';
 import { UpdateEntryComponent } from './update-entry/update-entry.component';
+import { DeleteEntryComponent } from './delete-entry/delete-entry.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { UpdateEntryComponent } from './update-entry/update-entry.component';
     FooterComponent,
     HeaderComponent,
     NewEntryComponent,
-    UpdateEntryComponent
+    UpdateEntryComponent,
+    DeleteEntryComponent
   ],
   imports: [
     BrowserModule,

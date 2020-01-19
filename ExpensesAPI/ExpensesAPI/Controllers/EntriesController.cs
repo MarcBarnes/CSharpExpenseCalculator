@@ -13,6 +13,7 @@ namespace ExpensesAPI.Controllers
     [EnableCors("http://localhost:4200","*","*")]
     public class EntriesController : ApiController
     {
+        [HttpGet]
         public IHttpActionResult GetEntries()
         {
 
@@ -55,6 +56,7 @@ namespace ExpensesAPI.Controllers
                 return BadRequest(ex.Message);
             }
         }
+
         [HttpPut]
         public IHttpActionResult UpdateEntry(int id, [FromBody]Entry entry)
         {
@@ -82,6 +84,29 @@ namespace ExpensesAPI.Controllers
             }
 
             
+        }
+
+        [HttpDelete]
+        public IHttpActionResult DeleteEntry(int id)
+        {
+            try
+            {
+                using (var context = new AppDbContext())
+                {
+                    //FirstOrDefault will place null value int teh entry 
+                    //as opposed to just first which will throw an exception
+                    var entry = context.Entries.FirstOrDefault(n => n.Id == id);
+                    if (entry == null) { return NotFound(); }
+
+                    context.Entries.Remove(entry);
+                    context.SaveChanges();
+                    return Ok("Entry deleted");
+                }
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
 
 
