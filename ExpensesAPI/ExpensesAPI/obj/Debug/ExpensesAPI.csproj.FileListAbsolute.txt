@@ -180,3 +180,11 @@ C:\Users\Mark\source\repos\MarcBarnes\CSharpExpenseCalculator\ExpensesAPI\Expens
 C:\Users\Mark\source\repos\MarcBarnes\CSharpExpenseCalculator\ExpensesAPI\ExpensesAPI\bin\System.Web.Http.Cors.dll
 C:\Users\Mark\source\repos\MarcBarnes\CSharpExpenseCalculator\ExpensesAPI\ExpensesAPI\bin\System.Web.Http.Cors.xml
 C:\Users\Mark\source\repos\MarcBarnes\CSharpExpenseCalculator\ExpensesAPI\ExpensesAPI\obj\Debug\ExpensesAPI.Migrations.UserAdded.resources
+C:\Users\Mark\source\repos\MarcBarnes\CSharpExpenseCalculator\ExpensesAPI\ExpensesAPI\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Mark\source\repos\MarcBarnes\CSharpExpenseCalculator\ExpensesAPI\ExpensesAPI\bin\Microsoft.IdentityModel.Logging.dll
+C:\Users\Mark\source\repos\MarcBarnes\CSharpExpenseCalculator\ExpensesAPI\ExpensesAPI\bin\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Mark\source\repos\MarcBarnes\CSharpExpenseCalculator\ExpensesAPI\ExpensesAPI\bin\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Mark\source\repos\MarcBarnes\CSharpExpenseCalculator\ExpensesAPI\ExpensesAPI\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+C:\Users\Mark\source\repos\MarcBarnes\CSharpExpenseCalculator\ExpensesAPI\ExpensesAPI\bin\Microsoft.IdentityModel.Logging.xml
+C:\Users\Mark\source\repos\MarcBarnes\CSharpExpenseCalculator\ExpensesAPI\ExpensesAPI\bin\Microsoft.IdentityModel.Tokens.xml
+C:\Users\Mark\source\repos\MarcBarnes\CSharpExpenseCalculator\ExpensesAPI\ExpensesAPI\bin\System.IdentityModel.Tokens.Jwt.xml
