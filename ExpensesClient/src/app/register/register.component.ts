@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { AuthService } from '../auth.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-register',
@@ -12,7 +13,8 @@ export class RegisterComponent {
   registerForm: FormGroup;
 
   constructor(private fb: FormBuilder,
-              private service:AuthService) {
+              private service:AuthService,
+              private router:Router) {
 
     this.registerForm = fb.group({
       userName: ['', Validators.required],
@@ -28,6 +30,7 @@ export class RegisterComponent {
        console.log(data);
        localStorage.setItem('userName', data.UserName)
        localStorage.setItem('token_value', data.Token)
+       this.router.navigate(['/entries']);
      })
    }
 

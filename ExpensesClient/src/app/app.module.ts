@@ -16,19 +16,21 @@ import { HttpClientModule } from '@angular/common/http';
 
 //material design
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatButtonModule, MatInputModule, MatCardModule, MatSelectModule, MatDialogModule,
-  MatSliderModule, MatTableModule, MatToolbarModule, MatListModule} from '@angular/material';
+import {MatButtonModule, MatInputModule, MatCardModule, MatSelectModule, MatDialogModule, MatIconModule,
+  MatSliderModule, MatTableModule, MatToolbarModule, MatListModule, MatSortModule, MatPaginatorModule} from '@angular/material';
 
 
-
+//components
 import { NewEntryComponent } from './new-entry/new-entry.component';
-
-
-//forms
-import {ReactiveFormsModule} from '@angular/forms';
 import { UpdateEntryComponent } from './update-entry/update-entry.component';
 import { DeleteEntryComponent } from './delete-entry/delete-entry.component';
 import { RegisterComponent } from './register/register.component';
+import { LoginComponent } from './login/login.component';
+
+//forms
+import {ReactiveFormsModule, FormsModule} from '@angular/forms';
+
+
 
 @NgModule({
   declarations: [
@@ -39,16 +41,18 @@ import { RegisterComponent } from './register/register.component';
     NewEntryComponent,
     UpdateEntryComponent,
     DeleteEntryComponent,
-    RegisterComponent
+    RegisterComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     AppRouterModule,
-    ReactiveFormsModule,
+    //forms
+    ReactiveFormsModule, FormsModule,
     //ng Material design
-    BrowserAnimationsModule, MatButtonModule, MatTableModule, MatDialogModule, MatListModule,
-    MatSliderModule,MatInputModule, MatCardModule, MatSelectModule, MatToolbarModule,
+    BrowserAnimationsModule, MatButtonModule, MatTableModule, MatDialogModule, MatListModule, MatIconModule,
+    MatSliderModule,MatInputModule, MatCardModule, MatSelectModule, MatToolbarModule, MatSortModule,MatPaginatorModule,
   ],
   entryComponents:[UpdateEntryComponent],
   providers: [EntryService, AuthService], 

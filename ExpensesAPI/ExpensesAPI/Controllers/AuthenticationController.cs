@@ -22,7 +22,25 @@ namespace ExpensesAPI.Controllers
         [HttpPost]
         public IHttpActionResult Login([FromBody]User user)
         {
-            return null;
+            if (string.IsNullOrEmpty(user.UserName) || string.IsNullOrEmpty(user.Password))
+                return BadRequest("Enter your username and password");
+
+            try
+            {
+                using (var context = new AppDbContext())
+                {
+                    var exists = context.Users.Any(n => n.UserName == user.UserName && n.Password == user.Password);
+                    if (exists)
+                        return Ok(CreateToken(user));
+
+                    return BadRequest("Username does not exists, or wrong credentials");
+                }
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+
         }
 
         [Route("register")]
