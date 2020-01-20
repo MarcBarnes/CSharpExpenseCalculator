@@ -17,4 +17,17 @@ export class AuthService {
   login(user){
     return this.http.post(this.baseUrl+'login', user);
   }
+
+  get getUserName(){
+    return localStorage.getItem('userName');
+  }
+
+  get isAuthenticated(){
+    return !!localStorage.getItem('token_value');
+  }
+
+  logout(){
+    localStorage.removeItem('userName');
+    localStorage.removeItem('token_value');
+  }
 }

@@ -24,8 +24,10 @@ export class RegisterComponent {
 
    onSubmit(){
      delete this.registerForm.value.confirmPassword;
-     this.service.register(this.registerForm.value).subscribe((data) => {
+     this.service.register(this.registerForm.value).subscribe((data:any) => {
        console.log(data);
+       localStorage.setItem('userName', data.UserName)
+       localStorage.setItem('token_value', data.Token)
      })
    }
 
