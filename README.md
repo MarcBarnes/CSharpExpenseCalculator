@@ -1,6 +1,10 @@
 # CSharpExpenseCalculator
 ASP.NET Web API, Angular / CLI, Entity Framework (Budget App w/ token auth)
 
+<img alt="Entries" src="http://markupdeveloper.com/wp-content/uploads/2020/01/signedInEntries.jpg">
+
+<img alt="Entries" src="">
+<img alt="Entries" src="">
  <strong>Marcus Barnes</strong>
 
 <strong>Purpose:</strong> This is a simple ASP.NET Web API project with database tables designed to demonstrate to utilize Entity Framework with tables within a database for user authentication and other expense data. The C# “ExpensesAPI” (server side) was written in Visual Studio 2017 and the Angular /CLI “ExpensesClient” (client side) written in VS Code (v1.41.1)
@@ -93,3 +97,11 @@ ASP.NET Web API, Angular / CLI, Entity Framework (Budget App w/ token auth)
  	<li><a href="https://material.angular.io/guide/getting-started">https://material.angular.io/guide/getting-started</a></li>
 </ul>
 
+<strong>Other Screenshots:</strong>
+<img alt="Entries" src="http://markupdeveloper.com/wp-content/uploads/2020/01/signin.jpg">
+<img alt="Entries" src="http://markupdeveloper.com/wp-content/uploads/2020/01/RegisterUser.jpg">
+<img alt="Entries" src="http://markupdeveloper.com/wp-content/uploads/2020/01/Entry-edit.jpg">
+<img alt="Entries" src="http://markupdeveloper.com/wp-content/uploads/2020/01/denialAccess.jpg">
+<img alt="Entries" src="http://markupdeveloper.com/wp-content/uploads/2020/01/DeleteEntry.jpg">
+
+<img alt="Entries" src="http://markupdeveloper.com/wp-content/uploads/2020/01/CreateEntry.jpg">
