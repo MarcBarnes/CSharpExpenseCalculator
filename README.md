@@ -10,11 +10,7 @@ ASP.NET Web API, Angular / CLI, Entity Framework (Budget App w/ token auth)
 <strong>Directions:</strong>
 <ul>
  	<li>Open up folder “ExpensesClient” in Visual Studio Code</li>
- 	<li>Open up sln ExpnesesAPI in Microsoft Visual Studio
-<ul>
- 	<li></li>
-</ul>
-</li>
+ 	<li>Open up sln ExpnesesAPI in Microsoft Visual Studio</li>
  	<li>Run client by entering “<em>ng serve -o” </em>into the terminal/CL</li>
  	<li>Run server app in VS (this must be running also to communicate with the database)</li>
 </ul>
